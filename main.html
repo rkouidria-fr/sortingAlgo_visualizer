@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorthims</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sorting Algorthims</h1>
+        <div class="controls">
+            <button id="bubbleSortBtn">Tri à Bulles</button>
+            <button id="mergeSortBtn">Tri Fusion</button>
+            <button id="quickSortBtn">Tri Rapide</button>
+            <button id="cocktailSortBtn">Tri Cocktail</button>
+            <button id="selectionSortBtn">Tri par Sélection</button>
+            <button id="smoothSortBtn">SmoothSort</button>
+
+        </div>
+    </header>
+    <main>
+        <canvas id="sortCanvas" width="800" height="400"></canvas>
+    </main>
+    <footer>
+        <div class="controls">
+            <label for="arraySize">Size :</label>
+            <input type="range" id="arraySize" min="10" max="100" value="30" disabled>
+            <span id="arraySizeLabel">30</span>
+            <label for="speed">Speed(/s) :</label>
+            <input type="range" id="speed" min="1" max="60" value="10">
+            <span id="speedLabel">10</span>
+            <button id="controlBtn">Go</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
